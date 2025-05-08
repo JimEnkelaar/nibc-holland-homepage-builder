@@ -1,21 +1,15 @@
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import AboutSection from "@/components/AboutSection";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-montserrat">
+    <div className="min-h-screen font-montserrat bg-white">
       <Header />
       <main>
         <Hero />
-        <Services />
-        <AboutSection />
-        <ContactSection />
+        {/* The current screenshot doesn't show other sections */}
       </main>
       <Footer />
       <ScrollToTop />

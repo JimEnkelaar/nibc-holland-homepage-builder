@@ -1,5 +1,5 @@
 
-import { ArrowUpRight, Home, Building, PiggyBank } from "lucide-react";
+import { ArrowUpRight, Home, Building, PiggyBank, Calculator } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ServiceCard = ({ title, description, icon, href }: { title: string; description: string; icon: React.ReactNode; href: string }) => {
@@ -30,24 +30,24 @@ const Services = () => {
         <div className="text-center mb-12">
           <h2 className="font-montserrat font-bold text-3xl mb-4 text-nibc-darkgray">Onze Diensten</h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-montserrat">
-            Bij NIBC bieden wij oplossingen voor zowel particuliere als zakelijke klanten.
+            Bij NIBC bieden wij verschillende financiële oplossingen voor particulieren.
             Ontdek wat wij voor u kunnen betekenen.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ServiceCard
-            title="Particuliere Hypotheken"
+            title="Hypotheken"
             description="Ontdek onze flexibele hypotheekoplossingen die bij uw persoonlijke situatie passen."
             icon={<Home size={32} />}
-            href="#particulieren"
+            href="#hypotheken"
           />
           
           <ServiceCard
-            title="Zakelijke Leningen"
-            description="Financieringsoplossingen voor uw bedrijf, of het nu gaat om groei, overname of andere zakelijke uitdagingen."
+            title="Direct Online Aanvragen"
+            description="Start direct online met uw hypotheekaanvraag en krijg snel duidelijkheid."
             icon={<Building size={32} />}
-            href="#zakelijk"
+            href="#aanvragen"
           />
           
           <ServiceCard
@@ -55,6 +55,13 @@ const Services = () => {
             description="Aantrekkelijke rentes op onze verschillende spaarrekeningen voor korte en lange termijn."
             icon={<PiggyBank size={32} />}
             href="#sparen"
+          />
+          
+          <ServiceCard
+            title="Hypotheekberekening"
+            description="Bereken eenvoudig wat u kunt lenen en wat uw maandlasten zullen zijn."
+            icon={<Calculator size={32} />}
+            href="#berekenen"
           />
         </div>
       </div>

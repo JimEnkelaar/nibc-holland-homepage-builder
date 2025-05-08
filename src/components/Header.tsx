@@ -21,11 +21,11 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#particulieren" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium">
-            Particulieren
+          <a href="#hypotheken" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium">
+            Hypotheken
           </a>
-          <a href="#zakelijk" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium">
-            Zakelijk
+          <a href="#sparen" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium">
+            Sparen
           </a>
           <a href="#over-ons" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium">
             Over Ons
@@ -54,11 +54,11 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white">
           <nav className="flex flex-col py-4 px-6 space-y-4">
-            <a href="#particulieren" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium py-2">
-              Particulieren
+            <a href="#hypotheken" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium py-2">
+              Hypotheken
             </a>
-            <a href="#zakelijk" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium py-2">
-              Zakelijk
+            <a href="#sparen" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium py-2">
+              Sparen
             </a>
             <a href="#over-ons" className="text-nibc-darkgray hover:text-nibc-blue transition-colors font-montserrat font-medium py-2">
               Over Ons

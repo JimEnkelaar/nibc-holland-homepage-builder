@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -10,10 +10,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="font-montserrat font-bold text-3xl mb-6 text-nibc-darkgray">Neem contact met ons op</h2>
+            <h2 className="font-montserrat font-bold text-3xl mb-6 text-nibc-darkgray">Contact</h2>
             <p className="text-gray-600 mb-8 font-montserrat">
-              Heeft u een vraag of wilt u meer informatie over onze diensten? Vul het 
-              contactformulier in of gebruik onze contactgegevens. Ons team staat voor u klaar.
+              Heeft u een vraag of wilt u meer informatie over onze diensten? Neem contact met ons op via 
+              onderstaande gegevens of vul het contactformulier in. 
             </p>
             
             <div className="space-y-6">
@@ -23,7 +23,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold mb-1">Telefonisch contact</h3>
-                  <p className="text-gray-600 font-montserrat">+31 (0)70 342 5425</p>
+                  <p className="text-gray-600 font-montserrat">088 - 6444 600</p>
                   <p className="text-gray-500 text-sm font-montserrat">Werkdagen: 08:30 - 17:30</p>
                 </div>
               </div>
@@ -34,7 +34,20 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-semibold mb-1">Email</h3>
-                  <p className="text-gray-600 font-montserrat">info@nibc.com</p>
+                  <p className="text-gray-600 font-montserrat">info@nibcdirect.nl</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="mr-4 bg-nibc-blue/10 p-3 rounded-full text-nibc-blue">
+                  <Clock size={20} />
+                </div>
+                <div>
+                  <h3 className="font-montserrat font-semibold mb-1">Openingstijden</h3>
+                  <p className="text-gray-600 font-montserrat">
+                    Maandag t/m vrijdag: 8:30 - 17:30 uur<br />
+                    Zaterdag en zondag: gesloten
+                  </p>
                 </div>
               </div>
               
@@ -66,6 +79,11 @@ const ContactSection = () => {
                   <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700 font-montserrat">E-mail</label>
                   <Input id="email" type="email" placeholder="uw-email@voorbeeld.nl" className="font-montserrat" />
                 </div>
+              </div>
+              
+              <div>
+                <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-700 font-montserrat">Telefoonnummer</label>
+                <Input id="phone" placeholder="Uw telefoonnummer" className="font-montserrat" />
               </div>
               
               <div>

@@ -42,10 +42,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4 px-4 md:px-0">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <div className="flex items-center">
-                <div className="w-8 h-8 bg-red-600 mr-1"></div>
-                <div className="text-black font-bold text-3xl tracking-tight">NIBC</div>
-              </div>
+              <img 
+                src="/public/lovable-uploads/bd01706e-f9a6-4f4c-9d0c-e0c2d752a4eb.png" 
+                alt="NIBC Logo" 
+                className="h-8" 
+              />
             </a>
           </div>
 
